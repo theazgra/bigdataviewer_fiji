@@ -9,3 +9,7 @@
 .settings
 /target
 /samples
+.idea/
+classes/
+src/main/resources/META-INF/MANIFEST.MF
+bigdataviewer_fiji.iml

@@ -41,7 +41,7 @@ import mpicbg.spim.data.SpimDataException;
  * @author HongKee Moon &lt;moon@mpi-cbg.de&gt;
  */
 @Plugin(type = Command.class,
-	menuPath = "Plugins>BigDataViewer>Browse BigDataServer")
+	menuPath = "Plugins>BigDataViewer>Browse BigDataServer(Debug)")
 public class BigDataBrowserPlugIn implements Command
 {
 	private final Map< String, ImageIcon > imageMap = new HashMap<>();
@@ -158,6 +158,7 @@ public class BigDataBrowserPlugIn implements Command
 					{
 						final String filename = datasetUrlMap.get( key );
 						final String title = new File( filename ).getName();
+						IJ.showMessage("Debug", "Opening connection to 'fileName': " + filename);
 						BigDataViewer.open( filename, title, new ProgressWriterIJ(), ViewerOptions.options() );
 					}
 					catch ( final SpimDataException e )
