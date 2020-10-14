@@ -9,3 +9,7 @@
 .settings
 /target
 /samples
+*.iml
+*.MF
+.idea/
+.vscode/
