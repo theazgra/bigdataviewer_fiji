@@ -17,6 +17,7 @@ import mpicbg.spim.data.SpimDataException;
 import mpicbg.spim.io.ConfigurationParserException;
 import net.imglib2.realtransform.AffineTransform3D;
 
+@Deprecated
 public class Scripting
 {
 	/**
@@ -42,6 +43,7 @@ public class Scripting
 	 * @return an initialized {@link SpimRegistrationSequence} sequence.
 	 * @throws ConfigurationParserException
 	 */
+	@Deprecated
 	public static SpimRegistrationSequence createSpimRegistrationSequence(
 			final String huiskenExperimentXmlFile,
 			final String channels,
@@ -85,6 +87,7 @@ public class Scripting
 	 * @return an initialized {@link SpimRegistrationSequence} sequence.
 	 * @throws ConfigurationParserException
 	 */
+	@Deprecated
 	public static SpimRegistrationSequence createSpimRegistrationSequence(
 			final String inputDirectory,
 			final String inputFilePattern,
@@ -108,6 +111,7 @@ public class Scripting
 	 * @param cropOffsetZ
 	 * @return
 	 */
+	@Deprecated
 	public static Map< Integer, AffineTransform3D > getFusionTransforms(
 			final SpimRegistrationSequence spimseq,
 			final int scale,
@@ -130,6 +134,7 @@ public class Scripting
 	 * @param fusionTransforms
 	 * @return
 	 */
+	@Deprecated
 	public static FusionResult createFusionResult(
 			final SpimRegistrationSequence spimseq,
 			final String filepath,
@@ -159,6 +164,7 @@ public class Scripting
 	 *            is used to generate paths for the partitions.
 	 * @return list of partitions.
 	 */
+	@Deprecated
 	public static ArrayList< Partition > split(
 			final SetupAggregator aggregator,
 			final int timepointsPerPartition,
